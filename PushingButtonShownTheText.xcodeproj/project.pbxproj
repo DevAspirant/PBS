@@ -21,6 +21,8 @@
 		58BB42001948309A00FCFA20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BB41E21948309A00FCFA20 /* UIKit.framework */; };
 		58BB42081948309A00FCFA20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58BB42061948309A00FCFA20 /* InfoPlist.strings */; };
 		58BB420A1948309A00FCFA20 /* PushingButtonShownTheTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BB42091948309A00FCFA20 /* PushingButtonShownTheTextTests.m */; };
+		58BB421419484BCB00FCFA20 /* Daylight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BB421319484BCB00FCFA20 /* Daylight.mp3 */; };
+		58BB421619484BDC00FCFA20 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BB421519484BDC00FCFA20 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		58BB42051948309A00FCFA20 /* PushingButtonShownTheTextTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PushingButtonShownTheTextTests-Info.plist"; sourceTree = "<group>"; };
 		58BB42071948309A00FCFA20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58BB42091948309A00FCFA20 /* PushingButtonShownTheTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushingButtonShownTheTextTests.m; sourceTree = "<group>"; };
+		58BB421319484BCB00FCFA20 /* Daylight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Daylight.mp3; sourceTree = "<group>"; };
+		58BB421519484BDC00FCFA20 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BB421619484BDC00FCFA20 /* AVFoundation.framework in Frameworks */,
 				58BB41E11948309A00FCFA20 /* CoreGraphics.framework in Frameworks */,
 				58BB41E31948309A00FCFA20 /* UIKit.framework in Frameworks */,
 				58BB41DF1948309A00FCFA20 /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		58BB41DD1948309A00FCFA20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58BB421519484BDC00FCFA20 /* AVFoundation.framework */,
 				58BB41DE1948309A00FCFA20 /* Foundation.framework */,
 				58BB41E01948309A00FCFA20 /* CoreGraphics.framework */,
 				58BB41E21948309A00FCFA20 /* UIKit.framework */,
@@ -116,6 +122,7 @@
 				58BB41EE1948309A00FCFA20 /* AppDelegate.m */,
 				58BB41F01948309A00FCFA20 /* Main.storyboard */,
 				58BB41F31948309A00FCFA20 /* ViewController.h */,
+				58BB421319484BCB00FCFA20 /* Daylight.mp3 */,
 				58BB41F41948309A00FCFA20 /* ViewController.m */,
 				58BB41F61948309A00FCFA20 /* Images.xcassets */,
 				58BB41E51948309A00FCFA20 /* Supporting Files */,
@@ -199,6 +206,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = devAspirant.wordpress.com;
 				TargetAttributes = {
+					58BB41DA1948309A00FCFA20 = {
+						DevelopmentTeam = Y8T698BPF9;
+					};
 					58BB41FB1948309A00FCFA20 = {
 						TestTargetID = 58BB41DA1948309A00FCFA20;
 					};
@@ -228,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BB421419484BCB00FCFA20 /* Daylight.mp3 in Resources */,
 				58BB41F71948309A00FCFA20 /* Images.xcassets in Resources */,
 				58BB41E91948309A00FCFA20 /* InfoPlist.strings in Resources */,
 				58BB41F21948309A00FCFA20 /* Main.storyboard in Resources */,
@@ -376,10 +387,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushingButtonShownTheText/PushingButtonShownTheText-Prefix.pch";
 				INFOPLIST_FILE = "PushingButtonShownTheText/PushingButtonShownTheText-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +403,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushingButtonShownTheText/PushingButtonShownTheText-Prefix.pch";
 				INFOPLIST_FILE = "PushingButtonShownTheText/PushingButtonShownTheText-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
